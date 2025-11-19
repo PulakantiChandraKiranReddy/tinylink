@@ -22,7 +22,7 @@ export default function Header() {
             Health
           </Link>
           <a
-            href="https://github.com/"
+            href="https://github.com/PulakantiChandraKiranReddy/tinylink"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.navLink}
