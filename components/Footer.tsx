@@ -25,7 +25,7 @@ export default function Footer() {
 
         <div className={styles.links}>
           <a
-            href="https://github.com/"
+            href="https://github.com/PulakantiChandraKiranReddy/tinylink"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.socialLink}
