@@ -1,0 +1,20 @@
+.snackbarWrapper {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto 16px auto;
+}
+
+.alertBox {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto 12px auto;
+  font-size: 15px;
+  padding-top: 10px;
+  padding-bottom: 6px;
+}
+
+.shortCode{
+    font-weight: 600;
+    color: #1976d2;
+}
