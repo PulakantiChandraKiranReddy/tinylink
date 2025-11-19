@@ -64,11 +64,14 @@ export default function StatsPage({ link }: { link: LinkRow }) {
   );
 }
 
-export const getServerSideProps: GetServerSideProps = async ({ params }) => {
+export const getServerSideProps: GetServerSideProps = async ({ params , req}) => {
   const code = params?.code as string;
+   const protocol = req.headers["x-forwarded-proto"] || "http";
+  const host = req.headers.host;
+  const baseUrl = `${protocol}://${host}`;
 
   const response = await fetch(
-    `${process.env.NEXT_PUBLIC_BASE_URL}/api/links/${code}`
+    `${baseUrl}/api/links/${code}`
   );
   const data = await response.json();
 
